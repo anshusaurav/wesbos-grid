@@ -21,18 +21,31 @@
   <style>
     .corners {
       display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       height: 200px;
       width: 200px;
       border: 10px solid var(--yellow);
-
     }
 
 
     .corner:nth-child(1),
-    .corner:nth-child(2) {}
+    .corner:nth-child(2) {
+      align-self: start;
+    }
 
     .corner:nth-child(1),
-    .corner:nth-child(3) {}
+    .corner:nth-child(3) {
+      justify-self: start;
+    }
+    .corner:nth-child(3)
+    {
+      place-self: end start;
+    }
+    .corner:nth-child(4)
+    {
+      place-self: end end;
+    }
   </style>
 </body>
 
