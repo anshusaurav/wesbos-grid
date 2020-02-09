@@ -46,6 +46,16 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(8, 1fr);  
+      grid-template-areas: 
+        "p p p p h h h h"
+        "p p p p h h h h"
+        "p p p p h h h h"
+        "p p p p h h h h";
+    }
+    .item3{
+      grid-column: p-start/h-end;
+      grid-row-end: p-end;
     }
   </style>
 </body>
